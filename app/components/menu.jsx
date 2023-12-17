@@ -12,9 +12,12 @@ import SendIcon from '@mui/icons-material/Send';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
-import { CheckBox } from '@mui/icons-material';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
 
-export default function NestedList() {
+
+
+export default function NestedList({item}) {
   const [open, setOpen] = React.useState(true);
 
   const handleClick = () => {
@@ -32,36 +35,30 @@ export default function NestedList() {
         <ListItemIcon>
           <InboxIcon />
         </ListItemIcon>
-        <ListItemText primary="brand" />
+        <ListItemText primary={item.filterBy} />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
+        {
+           item.items.map((ele) => {
+            return (
+              <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-            <CheckBox/>
-            </ListItemIcon>
-            <ListItemText primary="adidas" />
-          </ListItemButton>
-        </List>
+            
+            <Checkbox value ={"ppp"} color='default' checked={false} onChange={(e) => {
+              console.log(e.target.checked);
+            }}/>
+            
 
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-            <CheckBox/>
             </ListItemIcon>
-            <ListItemText primary="puma" />
+            <ListItemText primary={ele} />
           </ListItemButton>
         </List>
+            )
+           })
+        }
 
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <CheckBox/>
-            </ListItemIcon>
-            <ListItemText primary="nike" />
-          </ListItemButton>
-        </List>
 
       </Collapse>
     </List>

@@ -78,7 +78,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
       >
-        Options
+        Sort By
       </Button>
       <StyledMenu
         id="demo-customized-menu"

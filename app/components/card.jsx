@@ -22,7 +22,7 @@ import Menu from '@mui/material';
 import MenuItem from '@mui/material';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
-export default function RecipeReviewCard() {
+export default function RecipeReviewCard({item}) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -38,7 +38,12 @@ export default function RecipeReviewCard() {
 
 
   return (
-    <Card sx={{ maxWidth: 345 ,mt:'40px'}}>
+    <Card sx={{ maxWidth: 345 ,margin:{
+       xs:"0px",
+       md:"20px"
+    },
+    marginTop:"20px",
+    width:"300px"}}>
       <Box className='flex justify-end'>
       <ButtonBase
       className='pb-3'
@@ -79,7 +84,7 @@ export default function RecipeReviewCard() {
        
         component="img"
         height="194"
-        image="https://images.pexels.com/photos/18796528/pexels-photo-18796528/free-photo-of-chilehaus-office-building-in-hamburg.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        image={item.image}
         alt="Paella dish"
         sx={{
            width:"100%",
@@ -94,18 +99,16 @@ export default function RecipeReviewCard() {
          <RemoveRedEyeIcon/>
          <h3 className="text-1xl color-gray-600 ml-2">1000</h3>
         </div>
-        <h1 className="text-3xl font-bold card-title my-3">Product 1</h1>
+        <h1 className="text-3xl font-bold card-title my-3">{item.title}</h1>
        <h3 className="brand text-1xl capitalize">
-        by : adidaas
+        by : {item.brand}
        </h3>
        <h3 className="brand text-1xl capitalize">
         size : 3xl
        </h3>
 
-        <Typography variant="body2" color="text.secondary" className='mt-2'>
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+        <Typography variant="body2" color="text.secondary" className='mt-2 1-[100] w-[100] h-[30px] truncate	' >
+{item.description}
         </Typography>
       </CardContent>
         </Card>

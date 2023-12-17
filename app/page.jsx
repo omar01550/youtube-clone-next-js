@@ -23,7 +23,8 @@ const getProducts = async () => {
  }
 
 useEffect(() => { 
-  getProducts()
+  getProducts();
+
 },[])
 
 
@@ -133,7 +134,7 @@ const filterItems = [
 
 
       {/* products section */}
-      <section className="products pl-6 xs:w-[100%] md:w-[80%]">
+      <section className="products xs:pl-0 md:pl-6 xs:w-[100%] md:w-[80%]">
              <div className="section-header flex justify-between items-center py-5">
                   <div className='flex items-center text-2xl uppercase text-gray-600'>
                   {
@@ -152,7 +153,8 @@ const filterItems = [
                   }
                   <h3 className='ml-2'>item</h3>
                   </div>
-                       <SortBy/>
+                       {/* <SortBy/> */}
+                       
                   
                   
              </div>
@@ -163,7 +165,7 @@ const filterItems = [
                    products.length !=0 ?(
                      products.map((item) => { 
                       return (
-                        <MediaCard/>
+                        <MediaCard item={item}/>
                       )
                      })
                    )

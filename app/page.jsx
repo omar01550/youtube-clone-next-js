@@ -14,7 +14,7 @@ const [products,setProducts] = useState([]);
 
 const getProducts = async () => { 
     try {
-      const res = await fetch('http://localhost:3000/api/products')
+      const res = await fetch('https://ecommerce-next-js-omar.vercel.app/api/products')
       const data = await res.json()
      setProducts(data.products);
     } catch (error) {console.log(error);

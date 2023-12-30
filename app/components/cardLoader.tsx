@@ -6,7 +6,7 @@ import Link from 'next/link'
 const CardLoader = () => {
   return (
     
- <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 w-full md:w-80 mt-5">
+ <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 w-full md:w-80 mt-5" key={Math.floor(Math.random()*1000)}>
     <div className="relative overflow-hidden rounded-lg">
         <Skeleton
           className="w-full h-[160px] rounded-lg"

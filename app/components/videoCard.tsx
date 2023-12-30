@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 
-const VideoCard = () => {
+const VideoCard = ({image,title,id}:{image:string,title:string,id:string}) => {
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-2 w-full md:w-80 mt-5">
+    <Link href={`video/${id}`} className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-2 w-full md:w-80 mt-5" key={id}>
     <div className="relative overflow-hidden rounded-lg">
       <img
-        src="https://i.ytimg.com/vi/GFO_txvwK_c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBY_T0FcMO1MAP3SW2NPBpalBe1Mg"
+        src={image}
         alt="Video thumbnail"
-        className="w-full h-auto rounded-lg"
+        className="w-full min-h-[200px] h-auto rounded-lg"
       />
       <span className="absolute top-2 right-2 bg-black bg-opacity-50 px-2 py-1 text-xs text-white rounded">
         10:28
@@ -16,7 +16,7 @@ const VideoCard = () => {
     </div>
     <div className="mt-4">
       <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-300">
-      باغتوا الدبابات وأحرقوها .. القسام تنشر مشاهد لالتحام مقاتليها مع قوات الاحتلال في حيي ال      
+        {title}
       </h3>
       <Link href="/channel/80989080"
        className="channel flex justify-start items-center w-[fit-content]">
@@ -36,7 +36,7 @@ const VideoCard = () => {
         <span className="text-sm text-gray-500 dark:text-gray-400">2 days ago</span>
       </div>
     </div>
-  </div>
+  </Link>
 
   )
 }

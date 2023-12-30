@@ -1,0 +1,165 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "739I4ZPCOz3Nwaw0YbFcQusda6I",
+    "nextPageToken": "CAIQAA",
+    "regionCode": "EG",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 2
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "YcKtmrkd-zQFpLK-fUowiBSQ9d0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "wXoLGKdIXAI"
+            },
+            "snippet": {
+                "publishedAt": "2023-12-28T19:49:59Z",
+                "channelId": "UCoTREVo1yJwXXDY0TbTA4EQ",
+                "title": "أهداف مباراة | الأهلي 4-2 مودرن فيوتشر | نهائي كأس السوبر المصري 2023",
+                "description": "أهداف مباراة | الأهلي 4-2 مودرن فيوتشر | نهائي كأس السوبر المصري 2023 للاشتراك بقناة كورة بلس: https://bit.ly/3EzBspA للمزيد تابعونا ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/wXoLGKdIXAI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/wXoLGKdIXAI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/wXoLGKdIXAI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "kora plus",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-12-28T19:49:59Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ErGgKu0FXQvVT5dFmYSd_x2pCPo",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "e3Db7P_KMpg"
+            },
+            "snippet": {
+                "publishedAt": "2023-12-28T20:31:07Z",
+                "channelId": "UCNyKhK1GI6CUbJ-BDtJ44DA",
+                "title": "الأهلي ومودرن فيوتشر 4-2 | نهائي السوبر المصري 2023 | المباراة كاملة &amp; مراسم التتويج",
+                "description": "مباراة الأهلي ومودرن فيوتشر - نهائي كأس السوبر المصري 2023 - المباراة كاملة Al Ahly vs Future - Egyptian Super Cup Final - FULL ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/e3Db7P_KMpg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/e3Db7P_KMpg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/e3Db7P_KMpg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Sports United",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-12-28T20:31:07Z"
+            }
+        }
+    ]
+}
+
+
+// next page
+
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "lPhaXmYTj0TiwPFCA_MNFJOvSVg",
+    "nextPageToken": "CAQQAA",
+    "prevPageToken": "CAIQAQ",
+    "regionCode": "EG",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 2
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "K8T7RYlKOm2Tkd-sp6VZliRFzBw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "02m-UCjMYmk"
+            },
+            "snippet": {
+                "publishedAt": "2023-12-28T20:15:43Z",
+                "channelId": "UCNyKhK1GI6CUbJ-BDtJ44DA",
+                "title": "أهداف مباراة الأهلي ومودرن فيوتشر 4-2 | نهائي السوبر المصري لعام 2023",
+                "description": "أهداف مباراة الأهلي ومودرن فيوتشر 4-2 | في السوبر المصري لعام 2023 Al Ahly Vs Modern Future #sportsunited #المتحدة_للرياضة ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/02m-UCjMYmk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/02m-UCjMYmk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/02m-UCjMYmk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Sports United",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-12-28T20:15:43Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "hpQTj3ox7zUp_Bb-sfsUES3-l6E",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "qqcYC-z9VhA"
+            },
+            "snippet": {
+                "publishedAt": "2023-12-22T18:28:33Z",
+                "channelId": "UCZ3tVV0D7MlCSd9zqtH5GwA",
+                "title": "أهداف مباراة أوراوا الياباني 2 - 4 الأهلي المصري | كأس العالم للأندية 2023",
+                "description": "كسب فريق #الأهلي_المصري نظيره فريق أوراوا ريدز الياباني اليوم الجمعة بنتيجة 4-2 وحقق الميدالية البرونزية في مباراة تحديد المركز ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/qqcYC-z9VhA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/qqcYC-z9VhA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/qqcYC-z9VhA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SSC TV",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-12-22T18:28:33Z"
+            }
+        }
+    ]
+}

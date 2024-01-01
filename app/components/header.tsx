@@ -15,14 +15,14 @@ const Header = ({theme,setTheme}:{theme:string,setTheme:any}) => {
         </Link>
         <SearchBar/>
         <div className='flex items-center'>
-            <Search className='ml-5'/>
+            <Search className='ml-5 block md:hidden'/>
         {
 
              theme == 'dark'
-             ?<LightMode className='cursour-pointer ' onClick={() => { 
+             ?<LightMode className='cursor-pointer ' onClick={() => { 
                 setTheme('light')
              }}/>
-             :<DarkMode className='cursour-pointer ' onClick={() => { 
+             :<DarkMode className='cursor-pointer' onClick={() => { 
                 setTheme('dark')
              }}/>
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Header from './components/header'
 import './globals.css'
 import Container from './components/container'
+import NextProgress from 'next-progress'
 
 const RootLayout = ({children}:{children:React.ReactNode}) => {
   const [theme ,setTheme]= useState('light')
@@ -14,8 +15,9 @@ const RootLayout = ({children}:{children:React.ReactNode}) => {
   
   return (
     <html dir='rtl'>
-        <body className={theme}>
-         
+        <body className={theme+ " "+'dark:bg-black'}>
+        <NextProgress delay={300} options={{ showSpinner: false }} />
+
         
             <Container>
             <Header

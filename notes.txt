@@ -1,0 +1,46 @@
+
+
+[1] remove search icon in md and lg devices ;
+[2] remove load more btn from home page if dont have any videos 
+[
+[3] understand and knowing how search by voice works;
+[4] add search py voice dialgo
+[5] get sound and animaton
+]
+
+[6] handle loading indecator when switch between pages 
+[7] handle errors like
+[
+     if failed to load more whats happened 
+     if user click on loader when load 
+];
+
+[
+    if user dose not have internet 
+    if failed to fetch 
+]
+
+[
+    نتائج البحث عن cairo%20kee
+
+]
+
+features [
+        add loadmore on search page 
+        add comments seaction and video analist 
+        add channel page 
+        add profesional netx auth and understand all things
+        add to whatch later feature  [by use reducer];
+        load more by scrolling
+        add sharts analyst;
+]
+
+
+things must to learn 
+
+learn git and git hub  profisional ;
+learn test ;
+learn auth;
+learn error handling;
+
+learn the missing things in ts and taiwind;

@@ -58,9 +58,9 @@ setChannelImage(res.items[0].snippet.thumbnails.medium.url);
         alt="Video thumbnail"
         className="w-full min-h-[200px] h-auto rounded-lg"
       />
-      <span className="absolute top-2 right-2 bg-black bg-opacity-50 px-2 py-1 text-xs text-white rounded">
+      {/* <span className="absolute top-2 right-2 bg-black bg-opacity-50 px-2 py-1 text-xs text-white rounded">
         10:28
-      </span>
+      </span> */}
     </div>
     <div className="mt-4">
       <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-300">

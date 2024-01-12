@@ -7,6 +7,7 @@ import VideoCard from "../../components/videoCard"
 
 
 const SearchClient = ({videos}) => {
+    console.log(videos);
     
 
   return (

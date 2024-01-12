@@ -95,16 +95,20 @@ const LoadMoreFunc= async (url:string) => {
 
 
             <div className="flex justify-center items-center w-full py-3">
-                 <button className='text-white p-2 bg-black rounded-lg dark:bg-white dark:text-black font-bold mt-3' 
-                 onClick={() => {
-                    LoadMoreFunc(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=EG&maxResults=12&key=${"AIzaSyAAl-AqNyaZr0NiNnjsz73_o4sM3Eyk77I"}&pageToken=${nextPageToken}`)
-                 }}
-                 >
-                 
-                    {
-                    loadingMoreIndecator?<div className="loader w-[40px] h-[40px] border-solid border-4 border-blue-500 rounded-full border-b-transparent animate-spin"></div>:'مشاهدة المزيد'}
+                 {
+                     videos.length !=0&&(
+                        <button className='text-white p-2 bg-black rounded-lg dark:bg-white dark:text-black font-bold mt-3' 
+                            onClick={() => {
+                                LoadMoreFunc(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=EG&maxResults=12&key=${"AIzaSyAAl-AqNyaZr0NiNnjsz73_o4sM3Eyk77I"}&pageToken=${nextPageToken}`)
+                            }}
+                            >
+                            
+                                {
+                                loadingMoreIndecator?<div className="loader w-[40px] h-[40px] border-solid border-4 border-blue-500 rounded-full border-b-transparent animate-spin"></div>:'مشاهدة المزيد'}
 
                  </button>
+                     )
+                 }
                  
 
                  
